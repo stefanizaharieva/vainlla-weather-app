@@ -14,7 +14,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
+            <div class="overview">
     <h1>
         New York
     </h1>
@@ -28,10 +30,14 @@
     </ul>
     <div class="row">
 <div class="col-6">
+    <div class="clearfix weather-temperature">
     <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
     alt="Clear" 
+    class="float-left"
     />
-    12°C | °F
+    
+    <strong>12</strong><span class="units">°C | <a href="#">°F</a></span> 
+</div>
 </div>
 <div class="col-6">
     <ul>
@@ -45,13 +51,15 @@
             Wind: 2 km/h
         </li>
     </ul>
+    </div> 
+</div>
 </div>
 </div>
 <small>
     <a href="https://github.com/stefanizaharieva/vainlla-weather-app" target="_blank"> Open-source code </a>
     by Stefani Zaharieva
 </small>
-</div>
+      </div>
     </div>
     <script src="src/app.js"></script>
 </body>
